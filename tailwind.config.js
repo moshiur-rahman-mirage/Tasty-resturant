@@ -18,6 +18,7 @@ export default {
         "info": "#8EA7E9",
 
         "neutral": "#FFFFFF",
+        "neutral-content": "#000000",
 
         "success": "#F7F7F7",
         "error":"#000000",
