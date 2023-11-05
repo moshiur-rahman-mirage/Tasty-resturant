@@ -10,10 +10,11 @@ export default {
     themes: [{
       dark: {
 
-        "primary": "#5064B5",
-        "secondary": "#7286D3",
+        "secondary": "#F2511B",
+        "primary": "#d63500",
 
-       
+   // #edfdfb    background 
+        "base-300":"#edfdfb",
 
         "info": "#8EA7E9",
 

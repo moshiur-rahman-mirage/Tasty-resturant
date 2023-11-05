@@ -1,0 +1,45 @@
+[
+    {
+      "_id": 1,
+      "name": "Spaghetti Bolognese",
+      "image": "top6/3.jpg",
+      "category": "Pasta",
+      "price": 12.99
+    },
+    {
+      "_id": 2,
+      "name": "Grilled Salmon",
+      "image": "top6/3.jpg",
+      "category": "Seafood",
+      "price": 18.95
+    },
+    {
+      "_id": 3,
+      "name": "Caesar Salad",
+      "image": "top6/3.jpg",
+      "category": "Salad",
+      "price": 8.50
+    },
+    {
+      "_id": 4,
+      "name": "Margarita Pizza",
+      "image": "top6/3.jpg",
+      "category": "Pizza",
+      "price": 14.99
+    },
+    {
+      "_id": 5,
+      "name": "Chicken Tikka Masala",
+      "image": "top6/3.jpg",
+      "category": "Indian",
+      "price": 16.75
+    },
+    {
+      "_id": 6,
+      "name": "Chocolate Fondue",
+      "image": "top6/3.jpg",
+      "category": "Dessert",
+      "price": 9.99
+    }
+  ]
+  

@@ -44,7 +44,7 @@ const AuthProvider = ({ children }) => {
         }
     }, [])
 
-    const brand = "Hotel Rampura"
+    const brand = "DELPHI"
 
     const authInfo = {
         user,
