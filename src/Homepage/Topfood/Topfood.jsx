@@ -23,10 +23,11 @@ const Topfood = () => {
                         <Singlefood key={food._id} food={food} />
                     )
                 })}
+                <div></div>
+                <button className='rounded-full w-[250px] my-5 btn hover:bg-secondary btn-primary text-neutral mx-auto'>Show All</button>
+                <div></div>
             </div>
-            <div>
-                <button className='rounded-full mb-5 w-[250px] btn hover:bg-secondary btn-primary text-neutral mx-auto md:ml-[40%] ml-[25%] '>Show All</button>
-            </div>
+
         </div>
     );
 };

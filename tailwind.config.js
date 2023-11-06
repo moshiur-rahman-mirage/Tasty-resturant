@@ -14,7 +14,7 @@ export default {
         "primary": "#d63500",
 
    // #edfdfb    background 
-        "base-300":"#edfdfb",
+        "base-300":"#f4f3e7",
 
         "info": "#8EA7E9",
 

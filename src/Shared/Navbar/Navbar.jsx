@@ -17,6 +17,7 @@ const Navbar = () => {
     const navitem = <>
         <li><Link to="/" className='text-neutral hover:bg-secondary bg-primary mr-4'>Home</Link></li>
         <li><Link to="/allmenu" className='text-neutral hover:bg-secondary bg-primary  mr-4'>All Menu</Link></li>
+        <li><Link to="/blog" className='text-neutral hover:bg-secondary bg-primary  mr-4'>Blog</Link></li>
 
         <li tabIndex={0}>
             <details>
