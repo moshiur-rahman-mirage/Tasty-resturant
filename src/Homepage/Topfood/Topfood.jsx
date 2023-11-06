@@ -6,7 +6,7 @@ const Topfood = () => {
 
     const [tfood, setTfood] = useState([]);
     useState(() => {
-        fetch('topfood.json')
+        fetch('http://localhost:5000/menu')
             .then(res => res.json())
             .then(data => setTfood(data))
     }, [])

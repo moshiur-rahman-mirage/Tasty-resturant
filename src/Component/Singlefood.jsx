@@ -1,8 +1,9 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Singlefood = ({ food }) => {
     return (
-        <div className='flex flex-row justify-center mb-5'>
+        <NavLink to ={`/menu/${food._id}`}  className='flex flex-row justify-center mb-5'>
             <div className="max-w-[300px] rounded-lg overflow-hidden ">
                 <img className="w-full rounded-lg"  src={food.image} alt={food.name}/>
                     <div className="pt-4">
@@ -14,7 +15,7 @@ const Singlefood = ({ food }) => {
                         <button className='  mt-2 btn btn-primary'>Show Details</button>
                     </div>
             </div>
-        </div>
+        </NavLink>
     );
 };
 
