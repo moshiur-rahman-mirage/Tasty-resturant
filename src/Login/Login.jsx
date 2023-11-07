@@ -21,7 +21,7 @@ const Login = () => {
         signInUser(email, password)
             .then(result => {
                 toast.success('Logged In Successfully!');
-                navigate("/");
+                navigate(location?.state ? location.state : '/');
                 
             })
             .catch(error => {
@@ -41,6 +41,7 @@ const Login = () => {
         signInWithGoogle()
             .then(result => {
                 toast.success('Logged In Successfully!');
+                navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
                 toast.error('Error Occured!');

@@ -23,9 +23,9 @@ const Navbar = () => {
             <details>
                 <summary className='text-neutral hover:bg-secondary bg-primary  mr-4'> My Profile</summary>
                 <ul className="w-52 bg-primary">
-                    <li><NavLink to="/profile" className=" text-neutral hover:bg-secondary bg-primary ">Profile</NavLink> </li>
-                    <li><NavLink to="/profile" className=" text-neutral hover:bg-secondary bg-primary ">My Order</NavLink> </li>
-                    <li><NavLink to="/profile" className=" text-neutral hover:bg-secondary bg-primary ">My Product</NavLink> </li>
+                    <li><NavLink to="/addfood" className=" text-neutral hover:bg-secondary bg-primary ">Add a food</NavLink> </li>
+                    <li><NavLink to="/myorder" className=" text-neutral hover:bg-secondary bg-primary ">My Order</NavLink> </li>
+                    <li><NavLink to="/mymenu" className=" text-neutral hover:bg-secondary bg-primary ">My added food</NavLink> </li>
                 </ul>
             </details>
         </li>
