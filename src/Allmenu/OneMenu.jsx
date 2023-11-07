@@ -11,7 +11,7 @@ const OneMenu = () => {
                 <div className="flex flex-col items-start justify-start">
                     <h2 className="text-4xl mt-10 mb-5 font-semibold text-neutral-content">{food.name}</h2>
                     <p className='text-3xl text-neutral-content'>{food.category}</p>
-                    <p className=' my-5 text=2xl text-neutral-content font-semibold'>{food.price}</p>
+                    <p className=' my-5 text=2xl text-neutral-content font-semibold'>Price :$ {food.price}</p>
                     <div className="card-actions justify-end">
                         <button className="btn btn-primary">Order Now</button>
                     </div>
