@@ -65,21 +65,21 @@ const Login = () => {
                             <form className="space-y-4 md:space-y-6 border-neutral-content" onSubmit={handleLogin} >
                                 <div>
                                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-neutral-content ">Your email</label>
-                                    <input type="email" name="email" id="email" className=" border border-gray-300  sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  " placeholder="name@company.com" required="" />
+                                    <input type="email" name="email" id="email" className=" border border-text-neutral-content text-neutral-content  sm:text-sm rounded-lg  block w-full p-2.5  " placeholder="name@company.com" required="" />
                                 </div>
                                 <div>
                                     <label htmlFor="password" className="block mb-2 text-sm font-medium text-neutral-content">Password</label>
-                                    <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300  sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 text-neutral-content" required="" />
+                                    <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-text-neutral-content  sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 text-neutral-content" required="" />
                                 </div>
-                                <button type="submit" className="w-full bg-accent text-neutral btn btn-ghost  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  dark:hover:bg-primary-700 dark:focus:ring-primary-800">Sign in</button>
+                                <button type="submit" className="w-full text-neutral btn btn-primary  focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center  hover:bg-primary">Sign in</button>
                                 <div>
                                     <p className="text-sm font-light text-neutral-content">
-                                        Don’t have an account yet? <Link to="/signup" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Sign up</Link>
+                                        Don’t have an account yet? <Link to="/signup" className="font-medium text-neutral-content  hover:underline ">Sign up</Link>
                                     </p>
                                 </div>
                                 <div className="flex items-center justify-between gap-4">
                                 <p className='text-neutral-content'>Login With Google ?</p>
-                                <button onClick={handleGoogleSignIn} className="btn "><AiFillGoogleCircle className="text-3xl rounded-lg"></AiFillGoogleCircle></button>
+                                <button onClick={handleGoogleSignIn} className="btn btn-primary"><AiFillGoogleCircle className="text-3xl bg-primary rounded-lg"></AiFillGoogleCircle></button>
                                </div>
                             </form>
                         </div>

@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 import { useState } from 'react';
 import MyOneOrder from './MyOneOrder';
+import Swal from 'sweetalert2';
 
 const Myorder = () => {
     const { user, logout, brand, loading } = useContext(AuthContext)
@@ -10,10 +11,45 @@ const Myorder = () => {
 
     const [order, setOrder] = useState([]);
     useState(() => {
-        fetch(`https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/orders?email=${user.email}`)
+        fetch(`http://localhost:5000/orders?email=${user.email}`,{credentials:'include'})
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])
+
+
+
+    const handleDelete = _id => {
+        console.log(_id)
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`http://localhost:5000/orders/${_id}`, {
+                    method: 'DELETE'
+                })
+                    .then(res => res.json())
+                    .then(data => {
+                        if (data.deletedCount > 0) {
+                            Swal.fire(
+                                'Deleted!',
+                                'Your file has been deleted.',
+                                'success'
+                            )
+
+                            const remaining = order.filter(order => order._id !== _id);
+                            setOrder(remaining);
+                            
+                        }
+                    })
+            }
+        })
+    }
 
 
 
@@ -37,7 +73,7 @@ const Myorder = () => {
                       
                     {order.map(morder=>{
                         return(
-                            <MyOneOrder key={morder._id} morder={morder}/>
+                            <MyOneOrder key={morder._id} morder={morder} handleDelete={handleDelete} />
                         )
                     })}
 

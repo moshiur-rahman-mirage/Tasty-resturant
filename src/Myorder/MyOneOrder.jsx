@@ -1,9 +1,12 @@
 import React from 'react';
 
-const MyOneOrder = ({ morder }) => {
-    return (
+const MyOneOrder = ({ morder,handleDelete }) => {
 
+    const {_id}=morder
+    return (
+       
         <tr>
+             {console.log(morder)}
             <td className='text  text-neutral-content'>{morder.name}</td>
 
             <td>
@@ -18,12 +21,12 @@ const MyOneOrder = ({ morder }) => {
             </td>
           
             <td className='text  text-neutral-content'>{morder.qty}</td>
-            <td className='text  text-neutral-content'>{morder.currentPrice}</td>
+            <td className='text  text-neutral-content'>{morder.rate}</td>
             <th>
-                <button className="btn btn-ghost btn-xs text-neutral-content">Update</button>
+                <button className="btn btn-primary btn-xs text-neutral">Update</button>
             </th>
             <th>
-                <button className="btn btn-ghost btn-xs text-neutral-content">Delete</button>
+                <button onClick={()=>handleDelete(_id)}  className="btn btn-primary btn-xs text-neutral">Delete</button>
             </th>
         </tr>
 

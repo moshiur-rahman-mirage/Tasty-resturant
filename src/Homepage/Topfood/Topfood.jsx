@@ -6,7 +6,7 @@ const Topfood = () => {
 
     const [tfood, setTfood] = useState([]);
     useState(() => {
-        fetch('https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/menu')
+        fetch('http://localhost:5000/menu')
             .then(res => res.json())
             .then(data => setTfood(data))
     }, [])

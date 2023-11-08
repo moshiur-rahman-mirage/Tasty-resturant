@@ -25,15 +25,15 @@ const AddFood = () => {
         const form = e.target;
         const name = form.foodname.value;
         const category = form.foodcategory.value
-        const price = form.foodrate.value
-        const qty = form.foodqty.value
-        const origin = form.foodorigin.value
-        const desc = form.fooddesc.value
-        const preparer = user?.displayname
+        const rate = form.foodrate.value
+        const available_qty = form.foodqty.value
+        const country_of_origin = form.foodorigin.value
+        const recipe = form.fooddesc.value
+        const creator = user?.displayname
         const email = user?.email
-        const img = form.image.value;
-        const newitem = { name, category, price, qty, origin, desc, img }
-        fetch('https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/menu', {
+        const image_links = form.image.value;
+        const newitem = { name, category, rate, creator, country_of_origin, recipe, image_links,email,available_qty }
+        fetch('http://localhost:5000/menu', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -58,7 +58,7 @@ const AddFood = () => {
     }
 
     return (
-        <div className=' min-h-screen  bg-accent mx-auto'>
+        <div className=' min-h-screen  bg-base-300 mx-auto'>
             <div className='py-5  text-center w-full font-bold text-4xl text-neutral-content'>Food Add</div>
             <form onSubmit={handleSubmit} className="w-full mx-auto max-w-lg">
                 <div className="flex flex-wrap -mx-3 mb-6">
