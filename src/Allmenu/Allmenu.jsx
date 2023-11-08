@@ -6,14 +6,14 @@ import { useEffect } from 'react';
 const Allmenu = () => {
     const [menu, setMenu] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/menu')
+        fetch('https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/menu')
             .then(res => res.json())
             .then(data => setMenu(data))
     }, [])
     return (
-        <div>
+        <div className='bg-accent'>
             <div className='max-w-7xl mx-auto  '>
-                <h1 className='text-4xl my-5 text-neutral-content text-center font-semibold'>All Menu</h1>
+                <h1 className='text-4xl mb-5 text-neutral-content text-center font-semibold'>All Menu</h1>
                 <div className='grid grid-cols-1 md:grid-cols-3'>
                     {menu.map(food => {
                         return (

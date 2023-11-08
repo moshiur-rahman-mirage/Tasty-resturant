@@ -42,13 +42,13 @@ const Router = createBrowserRouter([
             {
                 path: "/menu/:id",
                 element: <PrivateRoutes><OneMenu /></PrivateRoutes>,
-                loader: ({ params }) => fetch(`http://localhost:5000/menu/${params.id}`),
+                loader: ({ params }) => fetch(`https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/${params.id}`),
             },
 
             {
                 path: "/order/:id",
                 element: <PrivateRoutes><Order/></PrivateRoutes>,
-                loader: ({ params }) => fetch(`http://localhost:5000/menu/${params.id}`),
+                loader: ({ params }) => fetch(`https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/menu/${params.id}`),
             },
 
             {

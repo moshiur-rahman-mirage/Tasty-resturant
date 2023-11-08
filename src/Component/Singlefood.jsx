@@ -7,7 +7,7 @@ const Singlefood = ({ food }) => {
     return (
         <NavLink to ={`/menu/${food._id}`}  className='flex flex-row justify-center mb-5'>
             <div className="max-w-[300px] rounded-lg overflow-hidden ">
-                <img className="w-full rounded-lg"  src={food.img} alt={food.name}/>
+                <img className="w-full rounded-lg"  src={food.image_links} alt={food.name}/>
                     <div className="pt-4">
                         <div className="font-bold text-xl mb-2 text-center md:text-left text-neutral-content">{food.name}</div>
                     </div>

@@ -29,7 +29,7 @@ const Order = () => {
             date
 
         }
-        fetch('http://localhost:5000/orders', {
+        fetch('https://b8a11-server-side-moshiur-rahman-mirage.vercel.app', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

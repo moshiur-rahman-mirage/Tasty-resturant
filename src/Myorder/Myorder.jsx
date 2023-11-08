@@ -10,7 +10,7 @@ const Myorder = () => {
 
     const [order, setOrder] = useState([]);
     useState(() => {
-        fetch(`http://localhost:5000/orders?email=${user.email}`)
+        fetch(`https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/orders?email=${user.email}`)
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])

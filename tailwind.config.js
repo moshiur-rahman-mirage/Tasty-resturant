@@ -23,7 +23,7 @@ export default {
 
         "success": "#F7F7F7",
         "error":"#000000",
-        "accent": "#A08C54",
+        "accent": "#edfdfb",
         "warning":"#F5C22F"
       },
 

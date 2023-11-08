@@ -9,8 +9,8 @@ const Secondhero = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedolorm reminusto doeiusmod tempor incidition ulla mco laboris nisi ut aliquip ex ea commo condorico consectetur adipiscing elitut aliquip.</p>
                 </div>
                 <div className='grid gap-5 grid-cols-1 md:grid-cols-2 max-w-5xl'>
-                    <div>  <img src="top6/1.jpg" className="w-full" alt="Tailwind CSS Carousel component" /></div>
-                    <div>  <img src="top6/1.jpg" className="w-full" alt="Tailwind CSS Carousel component" /></div>
+                    <div>  <img src="darkbanner.jpg" className="w-full" alt="Tailwind CSS Carousel component" /></div>
+                    <div>  <img src="pizza.jpg" className="w-full" alt="Tailwind CSS Carousel component" /></div>
                 </div>
         </div>
 
