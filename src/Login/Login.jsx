@@ -5,6 +5,7 @@ import { AiFillGoogleCircle } from "react-icons/ai";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { AuthContext } from '../Provider/AuthProvider';
+import HelmetTitle from '../HelmetTitle';
 
 const Login = () => {
     const location=useLocation();
@@ -49,6 +50,7 @@ const Login = () => {
     }
     return (
         <div>
+              <HelmetTitle title="Log In"/>
             <ToastContainer/>
             <section className="bg-secondary">
                 <div className="flex flex-col  items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">

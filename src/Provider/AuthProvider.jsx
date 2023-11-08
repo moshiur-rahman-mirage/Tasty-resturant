@@ -63,7 +63,7 @@ const AuthProvider = ({ children }) => {
         }
     }, [])
 
-    const brand = "DELPHI"
+    const brand = "Tasty"
 
     const authInfo = {
         user,

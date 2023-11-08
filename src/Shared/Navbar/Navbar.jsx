@@ -48,7 +48,7 @@ const Navbar = () => {
                                 {navitem}
                             </ul>
                         </div>
-                        <a className="btn btn-ghost text-neutral  hover:bg-secondary  bg-primary normal-case text-xl">{brand}</a>
+                        <NavLink to="/" className="btn btn-ghost text-neutral  hover:bg-secondary  bg-primary normal-case text-xl">{brand}</NavLink>
 
                     </div>
                     <div className="navbar-center text-neutral hidden lg:flex">

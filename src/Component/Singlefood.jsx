@@ -1,11 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import HelmetTitle from '../HelmetTitle';
 
 const Singlefood = ({ food }) => {
 
 
     return (
         <NavLink to ={`/menu/${food._id}`}  className='flex flex-row justify-center mb-5'>
+              
             <div className="max-w-[300px] rounded-lg overflow-hidden ">
                 <img className="w-64 object-cover h-52 rounded-lg"  src={food.image_links} alt={food.name}/>
                     <div className="pt-4">

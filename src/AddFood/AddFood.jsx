@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../Provider/AuthProvider';
+import HelmetTitle from '../HelmetTitle';
 
 const AddFood = () => {
     const [food, setFood] = useState([])
@@ -59,6 +60,7 @@ const AddFood = () => {
 
     return (
         <div className=' min-h-screen  bg-base-300 mx-auto'>
+              <HelmetTitle title="Add A Food Menu"/>
             <div className='py-5  text-center w-full font-bold text-4xl text-neutral-content'>Food Add</div>
             <form onSubmit={handleSubmit} className="w-full mx-auto max-w-lg">
                 <div className="flex flex-wrap -mx-3 mb-6">

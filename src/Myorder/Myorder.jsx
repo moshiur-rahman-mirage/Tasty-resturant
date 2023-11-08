@@ -4,6 +4,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 import { useState } from 'react';
 import MyOneOrder from './MyOneOrder';
 import Swal from 'sweetalert2';
+import HelmetTitle from '../HelmetTitle';
 
 const Myorder = () => {
     const { user, logout, brand, loading } = useContext(AuthContext)
@@ -54,8 +55,9 @@ const Myorder = () => {
 
 
     return (
-        <div className='max-w-7xl min-h-screen'>
-            <h1 className='text-4xl font-semibold text-center my-5 text-neutral-content'>My Orders</h1>
+        <div className=' min-h-screen bg-base-300'>
+              <HelmetTitle title="My Order"/>
+            <h1 className='text-4xl font-semibold text-center py-5 text-neutral-content'>My Orders</h1>
             <div className="overflow-x-auto">
                 <table className="table">
                     {/* head */}

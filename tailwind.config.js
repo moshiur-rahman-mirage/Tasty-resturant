@@ -13,7 +13,6 @@ export default {
         "secondary": "#F2511B",
         "primary": "#d63500",
 
-   // #edfdfb    background 
         "base-300":"#f4f3e7",
 
         "info": "#8EA7E9",
@@ -29,13 +28,16 @@ export default {
 
       light: {
 
-        "primary": "#004C3F",
+        "primary": "#387373",
 
-        "secondary": "#008C71",
+        "secondary": "#93BFB7",
+        "base-300":"#E4F2E7",
+        "neutral": "#FFFFFF",
+        "neutral-content": "#000000",
 
         "accent": "#008C71",
 
-        "neutral": "#000000",
+       
   
         "error": "#FFFFFF",
 
