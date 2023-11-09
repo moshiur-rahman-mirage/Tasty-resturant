@@ -37,7 +37,7 @@ const Router = createBrowserRouter([
             },
             {
                 path: "allmenu",
-                element: <Allmenu />
+                element: <PrivateRoutes><Allmenu /></PrivateRoutes>,
             },
             {
                 path: "/menu/:id",

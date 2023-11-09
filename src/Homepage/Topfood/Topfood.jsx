@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Singlefood from '../../Component/Singlefood';
+import { NavLink } from 'react-router-dom';
 
 const Topfood = () => {
 
@@ -24,7 +25,7 @@ const Topfood = () => {
                     )
                 })}
                 <div></div>
-                <button className='rounded-full w-[250px] my-5 btn hover:bg-secondary btn-primary text-neutral mx-auto'>Show All</button>
+                <NavLink to="/allmenu"  className='rounded-full w-[250px] my-5 btn hover:bg-secondary btn-primary text-neutral mx-auto'>Show All</NavLink>
                 <div></div>
             </div>
 
