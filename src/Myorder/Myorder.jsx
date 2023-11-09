@@ -12,7 +12,7 @@ const Myorder = () => {
 
     const [order, setOrder] = useState([]);
     useState(() => {
-        fetch(`http://localhost:5000/orders?email=${user.email}`,{credentials:'include'})
+        fetch(`https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/orders?email=${user.email}`,{credentials:'include'})
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])
@@ -31,7 +31,7 @@ const Myorder = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/orders/${_id}`, {
+                fetch(`https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/orders/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

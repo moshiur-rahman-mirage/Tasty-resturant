@@ -17,6 +17,7 @@ const Singlefood = ({ food }) => {
                         <div className='text-neutral-content'>Category: {food.category}</div>
                         <div className='text-neutral-content'>Price: ${food.rate}</div>
                         <div className='text-neutral-content'>Available Quantity: {food?.available_qty?food?.available_qty:0}</div>
+                        <div className='text-neutral-content'>Order Quantity: {food?.order_qty?food?.order_qty:0}</div>
                         <button className='  mt-2 btn btn-primary'>Show Details</button>
                     </div>
             </div>

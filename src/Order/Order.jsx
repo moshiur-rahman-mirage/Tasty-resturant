@@ -61,7 +61,7 @@ const Order = () => {
         toast.error('Wrong Qty');
     }
     else {
-        fetch('http://localhost:5000/orders', {
+        fetch('https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -93,7 +93,7 @@ const handleIncrement = (_id) => {
 
 
 
-    axios.post(`http://localhost:5000/mealupdate/${_id}`, requestData)
+    axios.post(`https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/mealupdate/${_id}`, requestData)
         .then(response => {
             console.log(`Field incremented successfully:${count}`, response.data.message);
         })

@@ -18,13 +18,13 @@ const Allmenu = () => {
     console.log(pages)
     console.log(numberOfPages)
     useEffect(() => {
-        fetch('http://localhost:5000/menucount')
+        fetch('https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/menucount')
             .then(res => res.json())
             .then(data => setCount(data.count))
     }, [])
     console.log(currentPage,itemsPerPage)
     useEffect(() => {
-        fetch(`http://localhost:5000/pagemenu?page=${currentPage}&size=${itemsPerPage}`)
+        fetch(`https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/pagemenu?page=${currentPage}&size=${itemsPerPage}`)
             .then(res => res.json())
             .then(data => setMenu(data))
     }, [currentPage, itemsPerPage]);

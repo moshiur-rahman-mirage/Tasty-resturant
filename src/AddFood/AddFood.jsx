@@ -34,7 +34,7 @@ const AddFood = () => {
         const email = user?.email
         const image_links = form.image.value;
         const newitem = { name, category, rate, creator, country_of_origin, recipe, image_links,email,available_qty }
-        fetch('http://localhost:5000/menu', {
+        fetch('https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/menu', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

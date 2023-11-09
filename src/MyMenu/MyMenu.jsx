@@ -12,7 +12,7 @@ const MyMenu = () => {
 
     const [food, setFood] = useState([]);
     useState(() => {
-        fetch(`http://localhost:5000/menu?email=${user.email}`)
+        fetch(`https://b8a11-server-side-moshiur-rahman-mirage.vercel.app/menu?email=${user.email}`)
             .then(res => res.json())
             .then(data => setFood(data))
     }, [])
