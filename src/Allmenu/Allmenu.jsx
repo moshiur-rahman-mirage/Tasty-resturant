@@ -8,8 +8,8 @@ import "./menu.css"
 const Allmenu = () => {
     const [menu, setMenu] = useState([])
     const [currentPage, setCurrentPage] = useState(0);
-    const [itemsPerPage, setItemsPerPage] = useState(3);
-    const [count, setCount] = useState(0)
+    const [itemsPerPage, setItemsPerPage] = useState(5);
+    const [count, setCount] = useState(20)
 
 
     const numberOfPages = Math.ceil(count / itemsPerPage);
