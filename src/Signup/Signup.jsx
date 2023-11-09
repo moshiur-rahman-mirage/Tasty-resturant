@@ -15,7 +15,7 @@ console.log('sign up clicked')
         const username = form.get('username')
         const email = form.get('email')
         const password = form.get('password')
-
+        const photo=form.get('photo');
         const isLengthValid = password.length >= 6;
         const hasUpperCase = /[A-Z]/.test(password);
         const hasSpecial = /(?=.*?[!@#\$&*~])/.test(password);
@@ -46,6 +46,10 @@ console.log('sign up clicked')
                         progress: undefined,
                         theme: "light",
                     });
+
+                   
+
+
                     logout();
                     
                 })
@@ -62,11 +66,11 @@ console.log('sign up clicked')
                 <ToastContainer/>
                 <section className="bg-gray-50 dark:bg-gray-900">
                     <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-                        <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-neutral-content dark:text-white">
+                        {/* <a href="#" className="flex items-center mb-6 text-2xl font-semibold text-neutral-content dark:text-white">
                             <h1 className="text-xl font-bold leading-tight tracking-tight text-neutral-content md:text-2xl dark:text-white">
                                 {brand}
                             </h1>
-                        </a>
+                        </a> */}
                         <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 ">
                             <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
                                 <h1 style={{ textAlign: `${user}` ? 'left' : 'right' }} className="text-xl font-bold leading-tight tracking-tight text-neutral-content md:text-2xl dark:text-white">
@@ -76,15 +80,19 @@ console.log('sign up clicked')
                                 </h1>
                                 <form className="space-y-4 md:space-y-6" onSubmit={handleSignup}>
                                     <div>
-                                        <label htmlFor="username" className="block mb-2 text-sm font-medium text-neutral-content dark:text-white">Your Name</label>
+                                        <label htmlFor="username" className="block mb-1 text-sm font-medium text-neutral-content dark:text-white">Your Name</label>
                                         <input type="text" name="username" id="username" className="bg-gray-50 border border-gray-300 text-neutral-content sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Name" required="" />
                                     </div>
                                     <div>
-                                        <label htmlFor="email" className="block mb-2 text-sm font-medium text-neutral-content dark:text-white">Your email</label>
+                                        <label htmlFor="email" className="block mb-1 text-sm font-medium text-neutral-content dark:text-white">Your email</label>
                                         <input type="email" name="email" id="email" className="bg-gray-50 border border-gray-300 text-neutral-content sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@company.com" required="" />
                                     </div>
                                     <div>
-                                        <label htmlFor="password" className="block mb-2 text-sm font-medium text-neutral-content dark:text-white">Password</label>
+                                        <label htmlFor="username" className="block mb-1 text-sm font-medium text-neutral-content dark:text-white">Your Photo</label>
+                                        <input type="url" name="photo" id="photo" className="bg-gray-50 border border-gray-300 text-neutral-content sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Photo url" required="" />
+                                    </div>
+                                    <div>
+                                        <label htmlFor="password" className="block mb-1 text-sm font-medium text-neutral-content dark:text-white">Password</label>
                                         <input type="password" name="password" id="password" placeholder="••••••••" className="bg-gray-50 border border-gray-300 text-neutral-content sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="" />
                                     </div>
                                     <div className="flex items-center justify-between">
