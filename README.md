@@ -1,5 +1,5 @@
 
-![Alt text](/src/img/contesthub-client.png)
+![Alt text](/src/img/testy.png)
 ## Description
 
 This Is a resturant website, I have named this as Tasty.
